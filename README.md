@@ -16,8 +16,8 @@ A simplified (haha) single-server portfolio application built with Vite + React 
 
 ```bash
 # Clone the repository
-git clone https://github.com/PastelPrism/shay-portfolio.git
-cd shay-portfolio
+git clone https://github.com/PastelPrism/portfolio-shay.git
+cd portfolio-shay
 
 # Install dependencies
 npm install
