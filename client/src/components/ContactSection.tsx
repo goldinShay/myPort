@@ -13,6 +13,8 @@ export function ContactSection() {
     subject: '',
     message: ''
   });
+  const [status, setStatus] = React.useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [statusMessage, setStatusMessage] = React.useState('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -22,10 +24,34 @@ export function ContactSection() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // HERE YOU CAN ADD YOUR FORM SUBMISSION LOGIC! 
+    setStatus('sending');
+    setStatusMessage('');
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      const result = await response.json();
+      
+      if (response.ok && result.success) {
+        setStatus('success');
+        setStatusMessage('Message sent successfully! I\'ll get back to you soon.');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus('error');
+        setStatusMessage(result.error || 'Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      setStatus('error');
+      setStatusMessage('Failed to send message. Please check your connection and try again.');
+    }
   };
 
   return (
@@ -98,10 +124,24 @@ export function ContactSection() {
                   required
                 />
               </div>
-              <Button type="submit" className="w-full gap-2 bg-emerald-700 text-white hover:bg-emerald-800">
+              <Button 
+                type="submit" 
+                disabled={status === 'sending'}
+                className="w-full gap-2 bg-emerald-700 text-white hover:bg-emerald-800 disabled:opacity-50"
+              >
                 <Send className="h-4 w-4" />
-                Send Message
+                {status === 'sending' ? 'Sending...' : 'Send Message'}
               </Button>
+              
+              {statusMessage && (
+                <div className={`text-sm text-center p-2 rounded ${
+                  status === 'success' 
+                    ? 'text-emerald-700 bg-emerald-50 border border-emerald-200' 
+                    : 'text-red-700 bg-red-50 border border-red-200'
+                }`}>
+                  {statusMessage}
+                </div>
+              )}
             </form>
           </CardContent>
         </Card>
