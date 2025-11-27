@@ -16,7 +16,7 @@ jobs:
       - name: Detect package manifest
         id: manifest
         run: |
-          if [ -f shay-portfolio/package.json ]; then
+          if [ -f package.json ]; then
             echo "found=true" >> $GITHUB_OUTPUT
           else
             echo "found=false" >> $GITHUB_OUTPUT
@@ -24,11 +24,11 @@ jobs:
 
       - name: Skip if no npm manifest
         if: steps.manifest.outputs.found == 'false'
-        run: echo "No package.json found in shay-portfolio. Skipping Shai-Hulud scan."
+        run: echo "No package.json found. Skipping Shai-Hulud scan."
 
       - name: Run Shai-Hulud Detector
         if: steps.manifest.outputs.found == 'true'
         uses: gensecaihq/Shai-Hulud-2.0-Detector@main
         with:
-          path: shay-portfolio
+          path: .
 
