@@ -1,7 +1,7 @@
 name: Shai-Hulud 2.0 Scan
 
 on:
-  workflow_dispatch:       
+  workflow_dispatch:        
   push:
     branches: [ main ]      
   pull_request:
@@ -13,17 +13,22 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      
-      - name: Detect package manifests
-        id: manifests
+      - name: Detect package manifest
+        id: manifest
         run: |
-          echo "count=$(ls -1 **/package.json 2>/dev/null | wc -l)" >> $GITHUB_OUTPUT
+          if [ -f shay-portfolio/package.json ]; then
+            echo "found=true" >> $GITHUB_OUTPUT
+          else
+            echo "found=false" >> $GITHUB_OUTPUT
+          fi
 
-      - name: Skip if no npm manifests
-        if: steps.manifests.outputs.count == '0'
-        run: |
-          echo "No package.json found. Skipping Shai-Hulud scan."
+      - name: Skip if no npm manifest
+        if: steps.manifest.outputs.found == 'false'
+        run: echo "No package.json found in shay-portfolio. Skipping Shai-Hulud scan."
 
       - name: Run Shai-Hulud Detector
-        if: steps.manifests.outputs.count != '0'
+        if: steps.manifest.outputs.found == 'true'
         uses: gensecaihq/Shai-Hulud-2.0-Detector@main
+        with:
+          path: shay-portfolio
+
