@@ -1,0 +1,29 @@
+name: Shai-Hulud 2.0 Scan
+
+on:
+  workflow_dispatch:       
+  push:
+    branches: [ main ]      
+  pull_request:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      
+      - name: Detect package manifests
+        id: manifests
+        run: |
+          echo "count=$(ls -1 **/package.json 2>/dev/null | wc -l)" >> $GITHUB_OUTPUT
+
+      - name: Skip if no npm manifests
+        if: steps.manifests.outputs.count == '0'
+        run: |
+          echo "No package.json found. Skipping Shai-Hulud scan."
+
+      - name: Run Shai-Hulud Detector
+        if: steps.manifests.outputs.count != '0'
+        uses: gensecaihq/Shai-Hulud-2.0-Detector@main

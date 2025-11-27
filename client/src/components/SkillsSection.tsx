@@ -21,7 +21,7 @@ const techStackSkills = [
   { name: 'Java 17', level: 95 },
   { name: 'Spring Boot 3', level: 93 },
   { name: 'MySQL', level: 89 },
-  { name: 'Thymeleaf', level: 80 }
+  { name: 'Thymeleaf', level: 85 }
 ];
 
 const currentlyLearning = [

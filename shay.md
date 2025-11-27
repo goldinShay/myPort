@@ -16,7 +16,7 @@ Here is a front, if you like it, it's yours. It's a bit complicated, but you've 
 - Restart the dev server after changing env vars so Express picks them up.
 
 ## Test Everything Locally
-```powershell
+```bash
 npm install          # once, if you haven't yet
 echo EMAIL_USER=... > .env  # fill in the real values
 npm run dev          # verify the form works (check terminal for mail errors)
