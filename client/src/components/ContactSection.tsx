@@ -188,15 +188,53 @@ export function ContactSection() {
             </CardHeader>
             <CardContent>
               <div className="flex gap-4">
-                <Button size="lg" variant="outline" className="flex-1 border-emerald-700 hover:bg-emerald-700 hover:text-white">
-                  <Github className="h-5 w-5" />
-                </Button>
-                <Button size="lg" variant="outline" className="flex-1 border-emerald-700 hover:bg-emerald-700 hover:text-white">
-                  <Linkedin className="h-5 w-5" />
-                </Button>
-                <Button size="lg" variant="outline" className="flex-1 border-emerald-700 hover:bg-emerald-700 hover:text-white">
-                  <Twitter className="h-5 w-5" />
-                </Button>
+                {/* GitHub */}
+                <a
+                  href="https://github.com/goldinshay"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1"
+                >
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full border-emerald-700 hover:bg-emerald-700 hover:text-white"
+                  >
+                    <Github className="h-5 w-5" />
+                  </Button>
+                </a>
+
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/shay-goldin-a0429a21b/?originalSubdomain=nl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1"
+                >
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full border-emerald-700 hover:bg-emerald-700 hover:text-white"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                  </Button>
+                </a>
+
+                {/* Bluesky (replacing Twitter) */}
+                <a
+                  href="https://bsky.app/profile/shaygoldin.bsky.social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1"
+                >
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full border-emerald-700 hover:bg-emerald-700 hover:text-white"
+                  >
+                    <Globe className="h-5 w-5" />
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
