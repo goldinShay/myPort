@@ -71,7 +71,7 @@ export function PersonalInfoCard() {
                   </Button>
                 </a>
                 <a
-                  href="/Resume.pdf"
+                  href="/shay goldin.pdf"
                   download
                   className="inline-flex items-center gap-2 bg-emerald-700 text-white hover:bg-emerald-800 px-3 py-2 rounded"
                 >
