@@ -80,20 +80,21 @@ export function ResumeSection() {
         </h2>
         <p className="text-muted-foreground mb-6">My career progression and educational background</p>
         <div className="flex justify-center gap-4">
-          <Button className="gap-2">
-            <a
-              href="/shay%20goldin_cv.pdf"
-              download
-              className="inline-flex items-center gap-2 bg-emerald-700 text-white hover:bg-emerald-800 px-3 py-2 rounded"
-            >
-              <Download className="h-4 w-4" />
-              Download Resume
-            </a>
+          <a
+            href="/shay_goldin_cv.pdf"
+            download
+            className="inline-flex items-center gap-2 bg-emerald-700 text-white hover:bg-emerald-800 px-3 py-2 rounded"
+          >
+            <Download className="h-4 w-4" />
+            Download Resume
+          </a>
+
           <Button variant="outline" className="gap-2">
             <Eye className="h-4 w-4" />
             View Online
           </Button>
         </div>
+
       </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
