@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { BlueskyIcon } from "@/components/icons/BlueskyIcon";
 
 export function ContactSection() {
   const [formData, setFormData] = React.useState({
@@ -220,7 +221,6 @@ export function ContactSection() {
                   </Button>
                 </a>
 
-                {/* Bluesky (replacing Twitter) */}
                 <a
                   href="https://bsky.app/profile/shaygoldin.bsky.social"
                   target="_blank"
@@ -232,7 +232,7 @@ export function ContactSection() {
                     variant="outline"
                     className="w-full border-emerald-700 hover:bg-emerald-700 hover:text-white"
                   >
-                    <Globe className="h-5 w-5" />
+                    <BlueskyIcon className="h-5 w-5" />
                   </Button>
                 </a>
               </div>
