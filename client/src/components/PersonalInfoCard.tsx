@@ -49,7 +49,7 @@ export function PersonalInfoCard() {
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <Phone className="h-4 w-4 text-emerald-700" />
-                <span>06-369625775</span>
+                <span>06-39625775</span>
               </div>
               <div className="flex justify-center lg:justify-start gap-3">
                 <a
