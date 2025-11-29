@@ -49,7 +49,7 @@ export function PersonalInfoCard() {
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <Phone className="h-4 w-4 text-emerald-700" />
-                <span>06-000000</span>
+                <span>06-369625775</span>
               </div>
               <div className="flex justify-center lg:justify-start gap-3">
                 <a
@@ -70,10 +70,14 @@ export function PersonalInfoCard() {
                     <Linkedin className="h-4 w-4" />
                   </Button>
                 </a>
-                <Button size="sm" className="gap-2 bg-emerald-700 text-white hover:bg-emerald-800">
+                <a
+                  href="/Resume.pdf"
+                  download
+                  className="inline-flex items-center gap-2 bg-emerald-700 text-white hover:bg-emerald-800 px-3 py-2 rounded"
+                >
                   <Download className="h-4 w-4" />
                   Resume
-                </Button>
+                </a>
               </div>
             </div>
           </div>
