@@ -16,5 +16,8 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+    allowedHosts: [
+      'myport-y8v0.onrender.com' // 👈 add your Render host here
+    ],
   },
 });
