@@ -15,9 +15,10 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
-    port: 3000,
+    // Use Render's PORT if available, otherwise default to 3000 locally
+    port: process.env.PORT ? parseInt(process.env.PORT) : 3000,
     allowedHosts: [
-      'myport-y8v0.onrender.com' // 👈 add your Render host here
+      'myport-y8v0.onrender.com' // 👈 Render host allowed
     ],
   },
 });
