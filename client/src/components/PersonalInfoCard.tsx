@@ -33,7 +33,7 @@ export function PersonalInfoCard() {
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-2">
               <Badge variant="secondary" className="text-sm bg-emerald-100 text-emerald-900 dark:bg-emerald-900 dark:text-emerald-100">Java</Badge>
-              <Badge variant="secondary" className="text-sm bg-emerald-100 text-emerald-900 dark:bg-emerald-900 dark:text-emerald-100">Spring Boot 4</Badge>
+              <Badge variant="secondary" className="text-sm bg-emerald-100 text-emerald-900 dark:bg-emerald-900 dark:text-emerald-100">Spring Boot 3</Badge>
               <Badge variant="secondary" className="text-sm bg-emerald-100 text-emerald-900 dark:bg-emerald-900 dark:text-emerald-100">PostgreSQL</Badge>
               <Badge variant="secondary" className="text-sm bg-emerald-100 text-emerald-900 dark:bg-emerald-900 dark:text-emerald-100">Thymeleaf</Badge>
             </div>
@@ -71,8 +71,8 @@ export function PersonalInfoCard() {
                   </Button>
                 </a>
                 <a
-                  href="/shay goldin.pdf"
-                  download
+                  href="/shay%20goldin_cv.pdf"
+                  download="shay_goldin_cv.pdf"
                   className="inline-flex items-center gap-2 bg-emerald-700 text-white hover:bg-emerald-800 px-3 py-2 rounded"
                 >
                   <Download className="h-4 w-4" />
