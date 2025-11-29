@@ -72,7 +72,7 @@ export function PersonalInfoCard() {
                 </a>
                 <a
                   href="/shay%20goldin_cv.pdf"
-                  download="shay_goldin_cv.pdf"
+                  download="shay goldin_cv.pdf"
                   className="inline-flex items-center gap-2 bg-emerald-700 text-white hover:bg-emerald-800 px-3 py-2 rounded"
                 >
                   <Download className="h-4 w-4" />
