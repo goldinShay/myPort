@@ -1,6 +1,6 @@
-# Shay's Maybe Portfolio
+# Shay's Portfolio
 
-A simplified (haha) single-server portfolio application built with Vite + React + TypeScript on the frontend and Express on the backend. Development and production run off a single Express server (port 3000) that conditionally enables Vite middleware during development.
+A simplified single-server portfolio application built with Vite + React + TypeScript on the frontend and Express on the backend. Development and production run off a single Express server (port 3000) that conditionally enables Vite middleware during development.
 
 ## 1. Prerequisites (Ubuntu / WSL / Linux)
 
