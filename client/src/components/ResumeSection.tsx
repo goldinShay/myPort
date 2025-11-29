@@ -82,8 +82,8 @@ export function ResumeSection() {
         <div className="flex justify-center gap-4">
           {/* Download button */}
           <a
-            href="/shay_goldin_cv.pdf"
-            download="shay_goldin_cv.pdf"
+            href="/shay goldin_cv.pdf"
+            download="shay goldin_cv.pdf"
             className="inline-flex items-center gap-2 bg-emerald-700 text-white hover:bg-emerald-800 px-3 py-2 rounded"
           >
             <Download className="h-4 w-4" />
@@ -92,7 +92,7 @@ export function ResumeSection() {
 
           {/* View Online button */}
           <a
-            href="/shay_goldin_cv.pdf"
+            href="/shay goldin_cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-emerald-700 text-emerald-700 hover:bg-emerald-700 hover:text-white px-3 py-2 rounded"
