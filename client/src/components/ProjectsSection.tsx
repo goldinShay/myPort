@@ -48,6 +48,14 @@ const formerProjects = [
     demo: 'https://demo.com'
   },
   {
+      title: 'E-rrig Secured Greenhouse Management System',
+      description: 'Live telemetry, history and control in a secured environment.',
+      tech: ['Java', 'Spring Boot', 'PostgreSQL', 'OAuth 2.0', 'JPA'],
+      status: 'Completed',
+      link: 'https://github.com',
+      demo: 'https://demo.com'
+    },
+  {
     title: 'Hospital Management System',
     description: 'Developed comprehensive HMS with patient records and appointment scheduling.',
     tech: ['Java', 'JSF', 'MySQL', 'JPA'],
