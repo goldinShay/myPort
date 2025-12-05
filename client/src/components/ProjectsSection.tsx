@@ -13,6 +13,13 @@ const currentProjects = [
     progress: 75
   },
   {
+      title: 'PhoenixSH',
+      description: 'Smart Home System.',
+      tech: ['Java 17', 'Spring Security', 'PostgreSQL', 'REST APIs'],
+      status: 'In Progress',
+      progress: 45
+    },
+  {
     title: 'Payment Gateway Integration',
     description: 'Developing secure payment processing system with multiple gateway support.',
     tech: ['Spring Security', 'PostgreSQL', 'REST APIs'],
@@ -40,9 +47,9 @@ const futureProjects = [
 
 const formerProjects = [
   {
-    title: 'Banking Transaction System',
-    description: 'Built high-frequency transaction processing system for major bank.',
-    tech: ['Java 11', 'Spring Boot', 'Oracle DB', 'Apache Kafka'],
+    title: 'Informiz - The Collaborative Fact-Checking Platform.',
+    description: 'fact-based public discussion.',
+    tech: ['Java 17', 'Spring Boot', 'MySQL DB', 'GCP', 'Kubernetes'],
     status: 'Completed',
     link: 'https://github.com',
     demo: 'https://demo.com'

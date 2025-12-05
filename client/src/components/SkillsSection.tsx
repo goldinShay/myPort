@@ -151,15 +151,23 @@ export function SkillsSection() {
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="p-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg border border-emerald-200 dark:border-emerald-800">
-                <div className="font-medium">Oracle Certified Professional</div>
+                <div className="font-medium">Udemy - global online learning platform </div>
+                <div className="text-sm text-muted-foreground">Complete AI & Machine Learning, Data Science Bootcamp</div>
+              </div>
+              <div className="p-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg border border-emerald-200 dark:border-emerald-800">
+                <div className="font-medium">Coursera - University of California </div>
+                <div className="text-sm text-muted-foreground">Internet of Things and Embedded Systems Specialization</div>
+              </div>
+              <div className="p-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg border border-emerald-200 dark:border-emerald-800">
+                <div className="font-medium">Coursera -Oracle Certified Professional</div>
                 <div className="text-sm text-muted-foreground">Java SE 11 Developer</div>
               </div>
               <div className="p-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg border border-emerald-200 dark:border-emerald-800">
-                <div className="font-medium">AWS Certified Developer</div>
+                <div className="font-medium">Udemy -AWS Certified Developer</div>
                 <div className="text-sm text-muted-foreground">Associate Level</div>
               </div>
               <div className="p-3 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg border border-emerald-200 dark:border-emerald-800">
-                <div className="font-medium">Spring Professional</div>
+                <div className="font-medium">Udemy -Spring Professional</div>
                 <div className="text-sm text-muted-foreground">VMware Certified</div>
               </div>
             </CardContent>
