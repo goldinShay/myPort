@@ -56,18 +56,18 @@ const experience = [
 
 const education = [
   {
-    degree: 'Master of Computer Science',
-    school: 'Stanford University',
-    period: '2015 - 2017',
-    gpa: '3.8/4.0',
-    focus: 'Distributed Systems & Software Engineering'
+    degree: 'Certificate in Water Technologies',
+    school: 'Ruppin Academic Center',
+    period: '2012 - 2015',
+    gpa: '3.7/4.0',
+    focus: 'Distillation Systems, Chemistry & Microbiology'
   },
   {
-    degree: 'Bachelor of Computer Engineering',
-    school: 'UC Berkeley',
-    period: '2011 - 2015',
-    gpa: '3.6/4.0',
-    focus: 'Computer Systems & Programming Languages'
+    degree: 'Cinema & Video, Photography',
+    school: 'Camera Obscura School of Art',
+    period: '2003 - 2007',
+    gpa: '3.8/4.0',
+    focus: 'Multicam & Live productions'
   }
 ];
 
